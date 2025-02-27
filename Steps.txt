@@ -1,0 +1,2 @@
+1- Basics
+ first we imported all the necessary packages such as react-router-dom,axios,react-player,react-redux,react-infinite-scroll-component
