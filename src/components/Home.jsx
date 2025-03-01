@@ -3,6 +3,7 @@ import Sidebar from "./templates/Sidebar";
 import TopNavbar from "./templates/TopNavbar";
 import Header from "./templates/Header";
 import axios from "../utils/axios";
+import TrendingCards from "./templates/TrendingCards";
 
 function Home() {
   document.title = "Movie App | HomePage";
@@ -32,6 +33,7 @@ function Home() {
       <div className="w-[80%] h-full">
         <TopNavbar />
         <Header wallpaper={wallpaper} />
+        <TrendingCards/>
       </div>
     </div>
   );
