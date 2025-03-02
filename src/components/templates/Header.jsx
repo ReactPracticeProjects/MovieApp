@@ -4,7 +4,7 @@ function Header({ wallpaper }) {
   if (!wallpaper || (!wallpaper.backdrop_path && !wallpaper.poster_path)) {
     return (
       <div className="mx-5 my-5 h-[35vh] bg-gray-800 flex items-center justify-center text-white text-xl">
-        No Image Available
+        Loading.....     
       </div>
     );
   }
@@ -15,14 +15,14 @@ function Header({ wallpaper }) {
       <div className="w-1/2 h-full">
         <img
           src={`https://image.tmdb.org/t/p/original/${wallpaper.backdrop_path || wallpaper.poster_path}`}
-          alt={wallpaper.title || wallpaper.original_title}
+          alt={wallpaper.title || wallpaper.original_title }
           className="w-full h-full object-cover"
         />
       </div>
 
       {/* Right Side - Info */}
       <div className="w-1/2 flex flex-col justify-center p-8 text-white">
-        <h1 className="text-4xl font-bold">{wallpaper.title || wallpaper.original_title}</h1>
+        <h1 className="text-4xl font-bold">{wallpaper.title || wallpaper.original_title || wallpaper.name}</h1>
         <p className="mt-3 text-sm opacity-80 leading-relaxed line-clamp-3">
           {wallpaper.overview ? wallpaper.overview.slice(0, 200) + "..." : "No description available."}
         </p>

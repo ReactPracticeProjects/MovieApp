@@ -17,7 +17,7 @@ function TopNavbar() {
     const getSearches = async ()=>{
       try {
            const {data }= await axios.get(`/search/multi?query=${query}`)
-           console.log(data.results)
+           
            setSearch(data.results)
            
       }catch(error){

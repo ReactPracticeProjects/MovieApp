@@ -30,7 +30,7 @@ function Home() {
   return (
     <div className="w-full h-full bg-[#1f1e24] flex">
       <Sidebar />
-      <div className="w-[80%] h-full">
+      <div className="w-[80%] h-full overflow-y-auto">
         <TopNavbar />
         <Header wallpaper={wallpaper} />
         <TrendingCards/>

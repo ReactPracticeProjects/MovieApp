@@ -11,8 +11,8 @@
 /* --color-secondary: #6556cd, */
 
 ::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
+    width: 0px;
+    height: 0px;
 }
 
 
@@ -22,3 +22,15 @@
 ::-webkit-scrollbar-thumb {
     background-color: #8200db;
 }
+
+
+/* Hide scrollbar for all browsers */
+.scrollbar-hidden {
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+  
