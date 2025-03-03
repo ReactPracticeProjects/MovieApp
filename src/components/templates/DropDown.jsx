@@ -4,6 +4,8 @@ import { FaChevronDown } from "react-icons/fa";
 function Dropdown({ options, selected, setSelected }) {
   const [isOpen, setIsOpen] = useState(false);
 
+  const dropdownsection = useState(0);
+
   return (
     <div className="relative w-[150px]">
       {/* Dropdown Button */}
